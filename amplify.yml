@@ -9,10 +9,6 @@ frontend:
     build:
       commands:
         - pnpm run build
-        - cp -r node_modules .next/
-        - cp package.json.next /
-        - cp next.config.js.next /
-        - cp - r public.next /
   artifacts:
     baseDirectory: .next
     files:
