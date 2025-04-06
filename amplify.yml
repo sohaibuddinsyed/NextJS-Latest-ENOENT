@@ -10,6 +10,8 @@ frontend:
       commands:
         - pnpm run build
         - cp -r public .next/
+        - ls -al
+        - ls -al .next/public
   artifacts:
     baseDirectory: .next
     files:
