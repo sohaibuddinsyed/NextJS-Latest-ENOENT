@@ -9,8 +9,6 @@ frontend:
     build:
       commands:
         - pnpm run build
-        - ls -al node_modules
-        - cp -r node_modules .next/
   artifacts:
     baseDirectory: .next
     files:
