@@ -9,6 +9,7 @@ frontend:
     build:
       commands:
         - pnpm run build
+        - cp -r public .next/
   artifacts:
     baseDirectory: .next
     files:
