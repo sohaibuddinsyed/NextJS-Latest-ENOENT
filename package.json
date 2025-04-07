@@ -12,6 +12,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "swr": "^2.0.0",
-    "@biomejs/biome": "latest"
+    "@biomejs/biome": "latest",
+    "modez": "latest",
+    "@chainsafe/eth2-spec-tests": "0.12.3",
   }
 }
