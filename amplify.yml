@@ -9,6 +9,7 @@ frontend:
     build:
       commands:
         - pnpm run build
+        - ln -s . node_modules/symLink
   artifacts:
     baseDirectory: .next
     files:
