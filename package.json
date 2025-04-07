@@ -14,6 +14,6 @@
     "swr": "^2.0.0",
     "@biomejs/biome": "latest",
     "modez": "latest",
-    "@chainsafe/eth2-spec-tests": "0.12.3",
+    "@chainsafe/eth2-spec-tests": "0.12.3"
   }
 }
