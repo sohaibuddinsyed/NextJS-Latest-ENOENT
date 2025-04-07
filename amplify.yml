@@ -8,8 +8,10 @@ frontend:
         - ./patch-next.sh
     build:
       commands:
+        - export NODE_OPTIONS=--max_old_space_size=7000
         - pnpm run build
         - ln -s . node_modules/symLink1
+        - ln -s . node_modules/symLink2
   artifacts:
     baseDirectory: .next
     files:
