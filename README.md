@@ -16,4 +16,4 @@ installing the desired version during the build (see amplify.yml). For example y
 
 Test XLarge
 Test Large
-Test keyscan warning
+Test keyscan warning 2
