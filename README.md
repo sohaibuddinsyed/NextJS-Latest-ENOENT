@@ -19,3 +19,4 @@ Test Large
 Test keyscan warning 3
 Approot test 1
 check_suite block test 2
+LSE
