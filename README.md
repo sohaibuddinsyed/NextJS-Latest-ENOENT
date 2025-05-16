@@ -15,7 +15,7 @@ installing the desired version during the build (see amplify.yml). For example y
 `canary` or `13.4.12`.
 
 Test XLarge
-Test Large
+Test Large 2
 Test keyscan warning 3
 Approot test 1
 check_suite block test 3
