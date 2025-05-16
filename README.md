@@ -14,7 +14,7 @@ variable `NEXTJS_VERSION_OVERRIDE` in Amplify Hosting. The `patch-next.sh` file 
 installing the desired version during the build (see amplify.yml). For example you can specify 
 `canary` or `13.4.12`.
 
-Test XLarge
+Test XLarge 2
 Test Large 2
 Test keyscan warning 3
 Approot test 1
