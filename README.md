@@ -19,3 +19,4 @@ Test Large 2
 Test keyscan warning 3
 Approot test 1
 check_suite block test 3
+TestAPIGWID 1
