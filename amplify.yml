@@ -5,7 +5,7 @@ frontend:
       commands:
         - corepack enable
         - pnpm install
-        - ./patch-next.sh
+        - git --version
     build:
       commands:
         - export NODE_OPTIONS=--max_old_space_size=7000
