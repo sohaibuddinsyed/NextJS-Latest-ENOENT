@@ -5,7 +5,9 @@
   "scripts": {
     "build": "next build",
     "start": "next start",
-    "dev": "next dev"
+    "dev": "next dev",
+    "build:heapprof": "node --heap-prof node_modules/next/dist/bin/next build",
+    "build:prof": "node --prof --no-logfile-per-isolate node_modules/next/dist/bin/next build"
   },
   "dependencies": {
     "next": "latest",
