@@ -7,13 +7,13 @@ frontend:
         - npm install
     build:
       commands:
-        # Run node profiler during build
-        - npm run build:prof
+        # Run heap profiler during build
+        - npm run build:heapprof
     postBuild:
       commands:
-        # Use the tick processor bundled with the Node.js to generate a profile summary
-        - node --prof-process v8.log > profiled.v8log.txt
-        - cat profiled.v8log.txt
+        # Heap*.heapprofile file will be created by Node.js
+        # Cat the output of the heap profile to build logs
+        - cat Heap*.heapprofile
   artifacts:
     baseDirectory: .next
     files:
