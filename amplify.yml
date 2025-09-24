@@ -4,7 +4,7 @@ frontend:
     preBuild:
       commands:
         - export NODE_OPTIONS='--max-old-space-size=7000'
-        - npm ci --cache .npm --prefer-offline
+        - npm install
     build:
       commands:
         # Run node profiler during build
