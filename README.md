@@ -20,3 +20,5 @@ Test keyscan warning 3
 Approot test 1
 check_suite block test 3
 TestAPIGWID 1
+
+Test 2
