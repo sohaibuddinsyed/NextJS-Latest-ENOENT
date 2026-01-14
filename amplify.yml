@@ -23,9 +23,9 @@ test:
     preTest:
       commands:
         - npm install
-        - npx cypress install
         - npm install -g pm2 wait-on
         - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
+        - npx cypress install --force
         - mkdir -p cypress/report/mochawesome-report
         - pm2 start npm -- start
         - wait-on http://localhost:3000
