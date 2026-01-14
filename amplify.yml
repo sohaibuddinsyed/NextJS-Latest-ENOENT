@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm install
         - ./patch-next.sh
     build:
       commands:
@@ -21,7 +21,7 @@ test:
   phases:
     preTest:
       commands:
-        - npm ci
+        - npm install
         - npm install -g pm2 wait-on
         - npm install mocha mochawesome mochawesome-merge mochawesome-report-generator
         - mkdir -p cypress/report/mochawesome-report
