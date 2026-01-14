@@ -4,14 +4,26 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "build:prof": "node --prof --no-logfile-per-isolate node_modules/next/dist/bin/next build",
     "start": "next start",
     "dev": "next dev"
   },
   "dependencies": {
+    "@biomejs/biome": "latest",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swr": "^2.0.0",
-    "@biomejs/biome": "latest"
+    "swr": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@types/react": "19.2.8",
+    "cypress": "^13.0.0",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.0.0",
+    "mochawesome-merge": "^4.0.0",
+    "mochawesome-report-generator": "^6.0.0",
+    "pm2": "^5.0.0",
+    "wait-on": "^7.0.0"
   }
 }
