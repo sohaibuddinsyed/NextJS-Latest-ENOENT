@@ -20,6 +20,8 @@ export default function Page({ time }) {
     );
   }
 
+  throw new Error("Something went wrong!"); 
+
   return (
     <TestResult passed={true} title={title}>
       This timestamp 👉 <b>{time}</b> should change every time the page is
