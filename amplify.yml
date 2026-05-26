@@ -3,13 +3,17 @@ frontend:
   phases:
     preBuild:
       commands:
-        - corepack enable
-        - pnpm install
-        - ./patch-next.sh
+        - export NODE_OPTIONS='--max-old-space-size=7000'
+        - npm install
     build:
       commands:
-        - export NODE_OPTIONS=--max_old_space_size=7000
-        - pnpm run build
+        # Run heap profiler during build
+        - npm run build:heapprof
+    postBuild:
+      commands:
+        # Heap*.heapprofile file will be created by Node.js
+        # Cat the output of the heap profile to build logs
+        - cat Heap*.heapprofile
   artifacts:
     baseDirectory: .next
     files:
