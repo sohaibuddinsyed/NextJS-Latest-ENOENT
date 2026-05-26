@@ -8,12 +8,7 @@ frontend:
     build:
       commands:
         # Run heap profiler during build
-        - npm run build:heapprof
-    postBuild:
-      commands:
-        # Heap*.heapprofile file will be created by Node.js
-        # Cat the output of the heap profile to build logs
-        - cat Heap*.heapprofile
+        - npm run build
   artifacts:
     baseDirectory: .next
     files:
