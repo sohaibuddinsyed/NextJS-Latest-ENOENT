@@ -3,8 +3,7 @@ import omega from "@omega/nextjs-adapter"
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-  adapter: omega(),
+  adapter: omega,
   images: {
     remotePatterns: [
       {
