@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export async function middleware(request) {
+export default async function middleware(request) {
   if (request.nextUrl.pathname === "/middleware-rewrite") {
     const { nextUrl: url } = request
     url.searchParams.set("rewritten", "true")
