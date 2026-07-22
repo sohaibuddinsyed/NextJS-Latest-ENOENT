@@ -1,9 +1,7 @@
-import omega from "@omega/nextjs-adapter"
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  adapter: omega,
+  adapterPath: "@omega/nextjs-adapter",
   images: {
     remotePatterns: [
       {
